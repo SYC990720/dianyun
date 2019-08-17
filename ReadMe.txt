@@ -1,105 +1,136 @@
-========================================================================
-       MICROSOFT FOUNDATION CLASS LIBRARY : CPointCloud
-========================================================================
+主要参考来自：https://download.csdn.net/download/lcy9819/7696131
 
+此项目实现的功能：读取点云文件（.txt文件格式，文件中只包含所有点的坐标数据），并绘制三维点云图形
 
-AppWizard has created this CPointCloud application for you.  This application
-not only demonstrates the basics of using the Microsoft Foundation classes
-but is also a starting point for writing your application.
+此项目运行环境：win10+vs2017+MFC+OpenGL
+运行前需要下载MFC框架相关组件以及OpenGL环境配置
+MFC框架下OpenGL的环境配置教程：https://blog.csdn.net/zhouhangjay/article/details/7678855
 
-This file contains a summary of what you will find in each of the files that
-make up your CPointCloud application.
+此项目主要文件结构为：资源文件、主框架运行文件以及其他一些MFC自带的文件。
+以下介绍各个文件的用途：
 
 CPointCloud.dsp
-    This file (the project file) contains information at the project level and
-    is used to build a single project or subproject. Other users can share the
-    project (.dsp) file, but they should export the makefiles locally.
+    此文件包含项目级别的信息和
+
+用于构建单个项目或子项目。其他用户可以共享
+
+项目（.dsp）文件，但应在本地导出生成文件。
 
 CPointCloud.h
-    This is the main header file for the application.  It includes other
-    project specific headers (including Resource.h) and declares the
-    CCPointCloudApp application class.
+    这是应用程序的主头文件，包括其他
+
+项目特定的标题（包括resource.h）并声明
+
+CCpointCloudApp应用程序类。
 
 CPointCloud.cpp
-    This is the main application source file that contains the application
-    class CCPointCloudApp.
+    这是包含应用程序的主应用程序源文件
+
+类ccpointcloudapp。
 
 CPointCloud.rc
-    This is a listing of all of the Microsoft Windows resources that the
-    program uses.  It includes the icons, bitmaps, and cursors that are stored
-    in the RES subdirectory.  This file can be directly edited in Microsoft
-	Visual C++.
+    这是所有Microsoft Windows资源的列表，
+
+程序使用。它包括存储的图标、位图和光标
+
+在res子 目录中。此文件可以在Microsoft中直接编辑
+
+Visual C++。
 
 CPointCloud.clw
-    This file contains information used by ClassWizard to edit existing
-    classes or add new classes.  ClassWizard also uses this file to store
-    information needed to create and edit message maps and dialog data
-    maps and to create prototype member functions.
+    此文件包含类向导用于编辑现有文件的信息
+
+类或添加新类。Classwizard还使用此文件存储
+
+创建和编辑消息映射和对话框数据所需的信息
+
+映射并创建原型成员函数。
 
 res\CPointCloud.ico
-    This is an icon file, which is used as the application's icon.  This
-    icon is included by the main resource file CPointCloud.rc.
+    这是一个图标文件，用作应用程序的图标。这个
+
+图标包含在主资源文件cpointcloud.rc中。
 
 res\CPointCloud.rc2
-    This file contains resources that are not edited by Microsoft 
-	Visual C++.  You should place all resources not editable by
-	the resource editor in this file.
+    此文件包含Microsoft未编辑的资源
+
+Visual C++。放置了所有不可被资源编辑器编辑的资源。
 
 
 
 /////////////////////////////////////////////////////////////////////////////
 
-For the main frame window:
+对于主框架窗口:
 
 MainFrm.h, MainFrm.cpp
-    These files contain the frame class CMainFrame, which is derived from
-    CFrameWnd and controls all SDI frame features.
+    这些文件包含框架类cmainframe，它是从
+
+cframewnd和控制所有SDI帧功能。
 
 res\Toolbar.bmp
-    This bitmap file is used to create tiled images for the toolbar.
-    The initial toolbar and status bar are constructed in the CMainFrame
-    class. Edit this toolbar bitmap using the resource editor, and
-    update the IDR_MAINFRAME TOOLBAR array in CPointCloud.rc to add
-    toolbar buttons.
+    此位图文件用于为工具栏创建平铺图像。
+
+初始工具栏和状态栏构建在CMainFrame中。
+
+类。使用资源编辑器编辑此工具栏位图，以及
+
+更新cpointcloud.rc中的idr_Mainframe工具栏数组以添加
+
+工具栏按钮
 /////////////////////////////////////////////////////////////////////////////
 
-AppWizard creates one document type and one view:
+应用程序向导创建一个文档类型和一个视图:
 
 CPointCloudDoc.h, CPointCloudDoc.cpp - the document
-    These files contain your CCPointCloudDoc class.  Edit these files to
-    add your special document data and to implement file saving and loading
-    (via CCPointCloudDoc::Serialize).
+    这些文件包含CCpointCloudDoc类。这些文件实现了点云文件保存和加载
+
+（通过ccpointclouddoc:：serialize）。
 
 CPointCloudView.h, CPointCloudView.cpp - the view of the document
-    These files contain your CCPointCloudView class.
-    CCPointCloudView objects are used to view CCPointCloudDoc objects.
+   这些文件包含CCpointCloudView类。
+
+CCpointCloudView对象用于查看CCpointCloudDoc对象。这些文件用于实现点云的绘制以及摄像头类的操作实现（包括平移、缩放等）。
 
 
 
 /////////////////////////////////////////////////////////////////////////////
-Other standard files:
+其他标准文件:
 
 StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named CPointCloud.pch and a precompiled types file named StdAfx.obj.
+    这些文件用于生成预编译头（PCH）文件
+
+名为cpointcloud.pch和名为stdafx.obj的预编译类型文件。
 
 Resource.h
-    This is the standard header file, which defines new resource IDs.
-    Microsoft Visual C++ reads and updates this file.
+    这是标准头文件，它定义了新的资源ID。
+
+微软Visual C++读取并更新此文件。
 
 /////////////////////////////////////////////////////////////////////////////
-Other notes:
+其他事项:
 
-AppWizard uses "TODO:" to indicate parts of the source code you
-should add to or customize.
+Appwizard使用“todo：”来指示源代码的某些部分
 
-If your application uses MFC in a shared DLL, and your application is 
-in a language other than the operating system's current language, you
-will need to copy the corresponding localized resources MFC42XXX.DLL
-from the Microsoft Visual C++ CD-ROM onto the system or system32 directory,
-and rename it to be MFCLOC.DLL.  ("XXX" stands for the language abbreviation.
-For example, MFC42DEU.DLL contains resources translated to German.)  If you
-don't do this, some of the UI elements of your application will remain in the
-language of the operating system.
+应该添加到或自定义。
+
+
+
+
+
+如果应用程序在共享DLL中使用MFC，并且应用程序
+
+在操作系统当前语言之外的其他语言中，
+
+将需要复制相应的本地化资源mfc42xx.dll
+
+从微软Visual C++CD-ROM到系统或Stase32目录，
+
+并将其重命名为mfcloc.dll。“XXX”代表语言缩写。
+
+例如，mfc42deu.dll包含翻译为德语的资源。）如果
+
+不要这样做，应用程序的某些UI元素将保留在
+
+操作系统的语言。
 
 /////////////////////////////////////////////////////////////////////////////
