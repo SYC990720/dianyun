@@ -1,0 +1,33 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Common.props(144,5): warning MSB4211: 正在首次将属性“WindowsTargetPlatformVersion”设置为某个值，但已在“C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.WindowsSDK.props (29,5)”处使用了该属性。
+  StdAfx.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  PointCloudView.cpp
+d:\pointcloud\pointcloudview.cpp(198): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(201): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(204): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(349): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(350): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(356): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(357): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(369): warning C4244: “=”: 从“LONG”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(370): warning C4244: “=”: 从“LONG”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(384): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(385): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(417): warning C4244: “=”: 从“LONG”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(418): warning C4244: “=”: 从“LONG”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(435): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+d:\pointcloud\pointcloudview.cpp(436): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+  PointCloudDoc.cpp
+d:\pointcloud\pointclouddoc.cpp(124): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+d:\pointcloud\pointclouddoc.cpp(144): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
+  PointCloud.cpp
+d:\pointcloud\pointcloud.cpp(62): warning C4996: 'CWinApp::Enable3dControlsStatic': CWinApp::Enable3dControlsStatic is no longer needed. You should remove this call.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\atlmfc\include\afxwin.h(5232): note: 参见“CWinApp::Enable3dControlsStatic”的声明
+  Point3D.cpp
+  MainFrm.cpp
+  正在生成代码...
+MainFrm.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+  PointCloud.vcxproj -> D:\PointCloud\.\Debug\PointCloud.exe
+  PointCloud.vcxproj -> .\Debug/PointCloud.pdb (Full PDB)
